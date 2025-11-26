@@ -1,0 +1,15 @@
+
+*{
+    /*reset css*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+
+}

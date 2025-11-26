@@ -1,0 +1,24 @@
+#dados_usuarios label, #dados_usuarios input {
+    display: block; 
+    min-width: 500px;
+ 
+    margin-bottom: 10px; 
+}
+#dados_usuarios input[type="submit"] {
+    display:inline-block;
+    margin-top: 10px;
+    
+}
+#dados_usuarios input {
+    width: 100%;
+    line-height: 30px;
+    padding: 5px;
+}
+#dados_usuarios #id {
+    font-weight: bold;
+    font-size: 1.2em;
+    /*user edit disabled*/
+    background-color: #646060;
+    color: #c4b1b1;
+    pointer-events: none;
+}
