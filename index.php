@@ -60,7 +60,7 @@
         <h1>Bem-vindo ao CRUD do Zoológico 🦁</h1>
         <p>Aqui você pode cadastrar, editar, listar e remover animais.</p>
 
-        <a href="View/telaListaAnimais.php" class="botao">Ver Animais</a>
+        <a href="View/viewLogin.php" class="botao">Ver Animais</a>
     </div>
 </div>
 
