@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -84,6 +85,7 @@ button:hover {
 <?php if(isset($_GET["msg"]) && $_GET["msg"] == "registered"): ?>
     <p style="color:green;">Registrado com sucesso! Faça login.</p>
 <?php endif; ?>
+
 
 <form method="post">
     <input type="email" name="email" placeholder="Seu email" required>

@@ -22,5 +22,6 @@ menu ul li a:hover {
     <ul>
         <li><a href="telaListaAnimais.php">Home</a></li>
         <li><a href="telaCadastrarAnimal.php">Cadastrar</a></li>
+        <li> <a href="viewSair.php">Sair</a></li>
     </ul>
 </menu>
