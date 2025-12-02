@@ -1,30 +1,10 @@
-<?php
-session_start();
-include_once(__DIR__ . "/../Banco/config.php");
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
-
-    $sql = $conn->prepare("INSERT INTO usuarios (nome,email,senha) VALUES (?,?,?)");
-
-    if ($sql->execute([$nome, $email, $senha])) {
-        header("Location: viewLogin.php?msg=registered");
-        exit;
-    } else {
-        $erro = "Erro ao registrar!";
-    }
-}
-?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <title>Registrar</title>
-
 <style>
 body {
     font-family: Arial;
@@ -34,7 +14,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 .card {
     width: 330px;
     padding: 25px;
@@ -43,7 +22,6 @@ body {
     box-shadow: 0 0 10px #0002;
     text-align: center;
 }
-
 input {
     width: 90%;
     padding: 10px;
@@ -51,7 +29,6 @@ input {
     border-radius: 6px;
     border: 1px solid #ccc;
 }
-
 button {
     width: 95%;
     padding: 10px;
@@ -61,22 +38,21 @@ button {
     border-radius: 6px;
     cursor: pointer;
 }
-button:hover {
-    background: #007a29;
-}
+button:hover { background: #007a29; }
 </style>
 </head>
 <body>
 
 <div class="card">
-
 <h2>Registrar</h2>
 
-<?php if(isset($erro)): ?>
-    <p style="color:red;"><?= $erro ?></p>
-<?php endif; ?>
+<?php
+if (isset($_GET["error"])) {
+    echo "<p style='color:red;'>Erro ao registrar!</p>";
+}
+?>
 
-<form method="post">
+<form method="post" action="../Controller/usuarioController.php?action=register">
     <input type="text" name="nome" placeholder="Seu nome" required>
     <input type="email" name="email" placeholder="Seu email" required>
     <input type="password" name="senha" placeholder="Crie uma senha" required>

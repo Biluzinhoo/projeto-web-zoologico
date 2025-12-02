@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* Container principal */
 .page-container {
     width: 90%;
     max-width: 900px;
@@ -17,14 +16,12 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Título */
 h1 {
     text-align: center;
     margin-bottom: 25px;
     color: #333;
 }
 
-/* Form de pesquisa */
 .search-box {
     display: flex;
     justify-content: center;
