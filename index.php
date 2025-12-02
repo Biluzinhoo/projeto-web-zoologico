@@ -57,8 +57,8 @@
 
 <div class="container">
     <div class="box">
-        <h1>Bem-vindo ao CRUD do Zoológico 🦁</h1>
-        <p>Aqui você pode cadastrar, editar, listar e remover animais.</p>
+        <h1>Bem-vindo ao Zoológico do Carlos</h1>
+        <p>Aqui você controla os dados de animais do zoológico</p>
 
         <a href="View/viewLogin.php" class="botao">Ver Animais</a>
     </div>

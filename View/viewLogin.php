@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["user_id"] = $user["id"];
         $_SESSION["user_name"] = $user["nome"];
 
-        header("Location: telaListaAnimais.php");
+        header("Location: viewListaAnimais.php");
         exit;
     } else {
         $erro = "Email ou senha incorretos!";

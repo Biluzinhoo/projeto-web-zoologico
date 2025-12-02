@@ -15,10 +15,10 @@ if ($method == "POST") {
         updateAnimal($id, $nome, $especie);
     }
 
-    header("Location: ../View/telaListaAnimais.php");
+    header("Location: ../View/viewListaAnimais.php");
 }
 
 if ($method == "GET" && isset($_GET["excluir"])) {
     deleteAnimal($_GET["excluir"]);
-    header("Location: ../View/telaListaAnimais.php");
+    header("Location: ../View/viewListaAnimais.php");
 }

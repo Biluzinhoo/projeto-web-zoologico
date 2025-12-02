@@ -20,8 +20,8 @@ menu ul li a:hover {
 
 <menu>
     <ul>
-        <li><a href="telaListaAnimais.php">Home</a></li>
-        <li><a href="telaCadastrarAnimal.php">Cadastrar</a></li>
+        <li><a href="viewListaAnimais.php">Home</a></li>
+        <li><a href="viewCadastrarAnimal.php">Cadastrar</a></li>
         <li> <a href="viewSair.php">Sair</a></li>
     </ul>
 </menu>
