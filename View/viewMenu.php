@@ -22,7 +22,7 @@ menu ul li a:hover {
     <ul>
         <li><a href="viewListaAnimais.php">Home</a></li>
         <li><a href="viewCadastrarAnimal.php">Cadastrar</a></li>
-        <li> <a href="viewSair.php">Sair</a></li>
+        <li><a href="../Controller/usuarioController.php?action=logout">Sair</a></li>    
     </ul>
 </menu>
 
